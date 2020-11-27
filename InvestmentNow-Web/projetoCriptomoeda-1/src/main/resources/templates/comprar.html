@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Investment Now</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="icon" href="/images/logo.png" />
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="/home" class="logo">Investment Now</a>
+		<nav class="right">
+			<a href="/login" class="button alt">Login</a>
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/home">Home</a></li>
+			<li><a href="/login">Carteira</a></li>
+		</ul>
+		<ul class="actions vertical">
+			<li><a href="/login" class="button fit">Login</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="col-sm-4" th:each="criptomoeda : ${criptomoeda}">
+			<div class="card css">
+				<div class="card-body">
+					<h5 class="card-title">Moeda Cadastrada</h5>
+					<p class="card-text">
+						Nome : <span th:text="${{criptomoeda.nomeMoeda}}"></span> <br>
+						Valor da Moeda : <span th:text="|R$ ${{criptomoeda.valorMoeda}}|"></span>
+						<br> Data de entrada : <span
+							th:text="${criptomoeda.dataEntrada}"></span> <br>
+						<a th:href="@{/adicionarCarrinho/{id}(id=${criptomoeda.id})}"
+							class="button fit btnsalvar">Comprar</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="copyright">&copy; 2020 Course Company. Todos os
+			direitos reservados.</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

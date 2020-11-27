@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+<title>Finalizar Compra</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="https://kit.fontawesome.com/a87a4abdd2.js"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<main>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"
+			style="margin-bottom: 20px">
+			<div class="logo" style="margin-left: 127px">
+				<img class="imagem" src="/images/logoLogin.png" width="64"
+					height="45" />
+				<div class="redes-sociais"></div>
+			</div>
+			<a class="navbar-brand" href="/home">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/comprarmoeda">Comprar
+							moeda</a></li>
+				</ul>
+			</div>
+		</nav>
+	</main>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h3>Informações da Compra</h3>
+
+				<form action="/finalizar/confirmar" method="POST">
+					<div class="col-12">
+						<div class="table-responsive">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">Moeda</th>
+										<th scope="col" class="text-center">Quantidade</th>
+										<th scope="col" class="text-right">Preço</th>
+										<th scope="col"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr th:each="transacao : ${transacao}">
+										<td><img src="" /></td>
+										<td th:text="${transacao.criptomoeda.nomeMoeda}"></td>
+										<td><span th:text="${transacao.quantidadeMoeda}"></span></td>
+										<td class="text-right" th:text="${transacao.valorInvestido}"></td>
+										<td class="text-right"></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Total</td>
+										<td class="text-right"><span
+											th:text="${compra.valorTotal}"></span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col mb-2">
+						<div class="row">
+							<div class="col-sm-12 col-md-6"></div>
+							<div class="col-sm-12 col-md-6 text-right">
+								<button class="btn btn-lg btn-block btn-success text-upercase">Confirmar
+									a compra</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</body>
+</html>

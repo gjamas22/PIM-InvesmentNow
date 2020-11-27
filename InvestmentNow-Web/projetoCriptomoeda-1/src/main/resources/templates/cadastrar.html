@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Investment Now</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="icon" href="/images/logo.png" />
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="/home" class="logo">Investment Now</a>
+		<nav class="right">
+			<a href="/login" class="button alt">Login</a>
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/home">Home</a></li>
+			<li><a href="/login">Carteira</a></li>
+		</ul>
+		<ul class="actions vertical">
+			<li><a href="/login" class="button fit">Login</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="card-header">
+			<h2 class="card-title text-center">Cadastre-se</h2>
+		</div>
+		<form action="/cadastrar" th:object="${cliente}" method="POST">
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="nome">Nome </label> <input type="text"
+						class="form-control" id="nome" placeholder="Nome Completo"
+						autofocus="autofocus" th:field="*{nome}" value="" required/>
+					<div class="invalid-feedback"></div>
+				</div>
+
+				<div class="col-sm-4">
+					<label for="cpf">CPF</label> <input type="text"
+						class="form-control" id="cpf" placeholder="CPF"
+						autofocus="autofocus" th:field="*{cpf}" value="" required/>
+					<div class="invalid-feedback"></div>
+				</div>
+
+				<div class="form-group col-md-4">
+					<label for="email">Email</label> <input type="text"
+						class="form-control" id="email" placeholder="Email"
+						autofocus="autofocus" th:field="*{email}" value="" required />
+					<div class="invalid-feedback"></div>
+				</div>
+
+				<div class="form-group col-md-4">
+					<label for="senha">Senha</label> <input type="password"
+						class="form-control" id="nome" placeholder="Senha"
+						autofocus="autofocus" th:field="*{senha}" value="" required/>
+					<div class="invalid-feedback"></div>
+				</div>
+
+				<div class="form-group col-md-4">
+					<label for="senha">Telefone</label> <input type="text"
+						class="form-control" id="telefone" placeholder="Telefone"
+						autofocus="autofocus" th:field="*{telefone}" value="" required/>
+					<div class="invalid-feedback"></div>
+				</div>
+			</div>
+			<div class="container" style="padding-top:20px">
+				<input type="hidden" id="id" value="" />
+				<button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+			</div>
+		</form>
+	</div>
+	<footer id="footer">
+		<div class="copyright">&copy; 2020 Course Company. Todos os
+			direitos reservados.</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

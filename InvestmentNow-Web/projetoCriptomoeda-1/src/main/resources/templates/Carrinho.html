@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+<title>Carrinho de Compra</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="https://kit.fontawesome.com/a87a4abdd2.js"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<main>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"
+			style="margin-bottom: 20px">
+			<div class="logo" style="margin-left: 127px">
+				<img class="imagem" src="/images/logoLogin.png" width="64"
+					height="45" />
+				<div class="redes-sociais"></div>
+			</div>
+			<a class="navbar-brand" href="/home">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/comprarmoeda">Comprar
+							moeda</a></li>
+				</ul>
+			</div>
+		</nav>
+	</main>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col">Produto</th>
+								<th scope="col" class="text-center">Quantidade</th>
+								<th scope="col" class="text-right">Preço</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="transacao : ${transacao}">
+								<td><img src="" /></td>
+								<td th:text="${transacao.criptomoeda.nomeMoeda}"></td>
+								<td><span th:text="${transacao.quantidadeMoeda}"></span> <a
+									class="btn btn-sm btn-primary"
+									th:href="@{/alterarQuantidade/{id}/{acao}(id=${transacao.criptomoeda.id},acao=${1})}"><i
+										class="fa fa-plus"></i></a> <a class="btn btn-sm btn-primary"
+									th:if="${transacao.quantidadeMoeda}>1"
+									th:href="@{/alterarQuantidade/{id}/{acao}(id=${transacao.criptomoeda.id},acao=${0})}"><i
+										class="fa fa-minus"></i></a></td>
+								<td class="text-right" th:text="${transacao.valorInvestido}"></td>
+								<td class="text-right"><a class="btn btn-sm btn-danger"
+									th:href="@{/removerEvento/{id}(id=${transacao.criptomoeda.id})}"><i
+										class="fa fa-trash"></i></a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Total</td>
+								<td class="text-right"><span th:text="${compra.valorTotal}"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col mb-2">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 text-right">
+						<a class="btn btn-block btn-light" href="/home" role="button">Continuar
+							comprando</a>
+					</div>
+					<div class="col-sm-12 col-md-6 text-right">
+						<a class="btn btn-lg btn-block btn-success text-upercase"
+							href="/finalizar" role="button">Finalizar compra</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+
+</body>
+
+</html>

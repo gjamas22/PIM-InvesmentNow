@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Investment Now</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="icon" href="/images/logo.png" />
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="/home" class="logo">Investment Now</a>
+		<nav class="right">
+			<a href="/login" class="button alt">Login</a>
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/home">Home</a></li>
+			<li><a href="/login">Carteira</a></li>
+		</ul>
+		<ul class="actions vertical">
+			<li><a href="/login" class="button fit">Login</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="card-header">
+			<h2 class="card-title text-center">Deposite o valor</h2>
+		</div>
+		<form action="/depositar" th:object="${carteira}" method="POST">
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="nome">Valor</label> <input type="text"
+						class="form-control" id="saldo" placeholder="Valor"
+						autofocus="autofocus" th:field="*{saldo}" value="" required />
+					<div class="invalid-feedback"></div>
+				</div>
+				<div class="form-group col-md-4">
+					<label for="endereco">Código Carteira</label> <input type="text"
+						class="form-control" id="endereco" placeholder="Código carteira (ex:5438)"
+						autofocus="autofocus" th:field="*{endereco}" value="" required />
+					<div class="invalid-feedback"></div>
+				</div>
+			</div>
+			<div class="container" style="padding-top: 20px">
+				<input type="hidden" id="id" value="" />
+				<button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+			</div>
+		</form>
+	</div>
+	<footer id="footer">
+		<div class="copyright">&copy; 2020 Course Company. Todos os
+			direitos reservados.</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

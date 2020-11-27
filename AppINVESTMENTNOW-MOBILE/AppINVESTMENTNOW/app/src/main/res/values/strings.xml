@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">TesteMobile</string>
+    <string name="usuario">Usuario:</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha:</string>
+    <string name="registro">Faça seu cadastro</string>/string>
+    <string name="sucesso">Sucesso</string>
+    <string name="pergunta">Não possui conta?</string>
+    <string name="todo">TODO</string>
+    <string name="bem_vindo">Bem Vindo ao app da Investment Now</string>
+    <string name="opções">Selecione uma opção abaixo para prosseguir</string>
+    <string name="saldo">Saldo</string>
+    <string name="nome">Nome</string>
+    <string name="title_activity_pgn_inicial">MainActivity</string>
+    <string name="title_home">Inicial</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notificações</string>
+    <string name="cadastro_frag">Cadastro de Cliente</string>
+    <string name="tela">Tela de Cadastro de Clientes</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="title_activity_menu_principal">MainActivity</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_activity_controle">MainActivity</string>
+    <string name="title_activity_vai_se_fuder">MainActivity</string>
+    <string name="title_activity_teste">teste</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pgn_teste">pgnTeste</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_teste_layout">MainActivity</string>
+    <string name="inicial">inicial</string>
+    <string name="cod">Digite o código da transação:</string>
+    <string name="procurar">Procurar</string>
+    <string name="resultado">Resultado da busca</string>
+    <string name="transacoes">Transações</string>
+    <string name="list_tran">Lista de Transações</string>
+    <string name="email">E-Mail</string>
+    <string name="guia">Selecione uma das opções abaixo para navegar pelo nosso app</string>
+    <string name="Search">Digite o codigo da assinatura</string>
+    <string name="CPF">CPF</string>
+    <string name="tel">Telefone</string>
+    <string name="Linhas">Id  | Valor | QTD | cdCarteira | cdMoeda | cdTarifa</string>
+</resources>

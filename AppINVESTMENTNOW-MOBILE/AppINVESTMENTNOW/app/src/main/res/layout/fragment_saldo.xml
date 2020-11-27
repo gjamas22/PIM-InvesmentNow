@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Saldo">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/angryimg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cod"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 2" />
+
+        <Button
+            android:id="@+id/btnProcurar"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/layout_botao"
+            android:text="@string/procurar" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

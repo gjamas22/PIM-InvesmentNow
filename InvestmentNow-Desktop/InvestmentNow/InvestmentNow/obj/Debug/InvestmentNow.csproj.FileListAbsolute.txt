@@ -1,0 +1,17 @@
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\bin\Debug\InvestmentNow.exe.config
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\bin\Debug\InvestmentNow.exe
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\bin\Debug\InvestmentNow.pdb
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.csprojAssemblyReference.cache
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.Form1.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.Properties.Resources.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.csproj.GenerateResource.cache
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.exe
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.pdb
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmLogin.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmCadastroFuncionario.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmCadastroMoeda.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmConsultaMoeda.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmRelatorioTransacoes.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmConsultaFuncionario.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmRelatorioSalarios.resources
+C:\Users\Erik\source\repos\InvestmentNow\InvestmentNow\obj\Debug\InvestmentNow.FrmCadastroLogin.resources

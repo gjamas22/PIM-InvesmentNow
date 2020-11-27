@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Investment Now</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="icon" href="/images/logo.png" />
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="/home" class="logo">Investment Now</a>
+		<nav class="right">
+			<a href="/login" class="button alt">Login</a>
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/home">Home</a></li>
+			<li><a href="/login">Carteira</a></li>
+		</ul>
+		<ul class="actions vertical">
+			<li><a href="/login" class="button fit">Login</a></li>
+		</ul>
+	</nav>
+	
+	<div class="container carteira">
+		<div class="form-row" style="margin-left:60px; margin-right:60px">
+			<div class="container" style="padding-top: 20px">
+				<input type="hidden" id="id" value="" />
+				<h1 align="right" style="margin-right: 466px;">Carteira</h1>
+				<button id="buttonDepositar" type="button" class="btn btn-primary btn-sm">Depositar</button>
+			</div>
+			<div class="container" style="padding-top: 20px">
+				<input type="hidden" id="id" value="" />
+				<p>
+					<img src="images/grafico2.jpeg" align="right" height="300" style="margin-top: -76px;
+    margin-bottom: 67px;">
+					<button id="buttonComprar" type="button" class="btn btn-primary btn-sm">Comprar
+						moeda</button>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="copyright">&copy; 2020 Course Company. Todos os
+			direitos reservados.</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	
+	<script type="text/javascript"> 
+	$("#buttonComprar").click(function(){
+		window.location.href = "/comprarmoeda"
+	})
+	$("#buttonDepositar").click(function(){
+		window.location.href = "/depositar"
+	})
+	</script>
+	
+	
+
+</body>
+
+</html>

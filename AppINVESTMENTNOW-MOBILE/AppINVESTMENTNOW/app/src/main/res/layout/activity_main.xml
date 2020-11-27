@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/angryimg"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/tLogin"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginBottom="385dp"
+        android:background="#0000"
+        android:drawableStart="@drawable/ic_action_usuario"
+        android:drawableLeft="@drawable/ic_action_usuario"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tSenha"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginBottom="287dp"
+        android:autofillHints=""
+        android:background="#0000"
+        android:drawableStart="@drawable/ic_action_senha"
+        android:drawableLeft="@drawable/ic_action_senha"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:imeOptions="actionGo"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginBottom="226dp"
+        android:background="@drawable/layout_botao"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginBottom="147dp"
+        android:text="@string/pergunta"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btRegistro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btRegistro"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginBottom="147dp"
+        android:background="#0000"
+        android:text="@string/registro"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtPergunta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="211dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="514dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

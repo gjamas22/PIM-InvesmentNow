@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+<title>Compra finalizada!</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+	<main>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"
+			style="margin-bottom: 20px">
+			<div class="logo" style="margin-left: 127px">
+				<img class="imagem" src="/images/logoLogin.png" width="64"
+					height="45" />
+				<div class="redes-sociais"></div>
+			</div>
+			<a class="navbar-brand" href="/home">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/comprarmoeda">Comprar
+							moeda</a></li>
+				</ul>
+			</div>
+		</nav>
+	</main>
+	<div class="col-sm-12 col-md-6 text-center">
+		<h1>Compra Efetuada com sucesso!</h1>
+	</div>
+	<div class="col-sm-12 col-md-6 text-right">
+		<a class="btn btn-block btn-light" href="/home" role="button">Voltar
+			para Home</a>
+	</div>
+
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</body>
+</html>
