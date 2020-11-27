@@ -1,10 +1,10 @@
-------------------------------------- CRIA«√O DATABASE -------------------------------------
+------------------------------------- CRIA√á√ÉO DATABASE -------------------------------------
 CREATE DATABASE INVESTMENTNOW
 GO
 USE INVESTMENTNOW
 GO
 
-------------------------------------- CRIA«√O DE TABELAS -------------------------------------
+------------------------------------- CRIA√á√ÉO DE TABELAS -------------------------------------
 CREATE TABLE Cliente(
 
 codCliente integer identity primary key Not null,
@@ -113,9 +113,11 @@ codTransacao integer
 
 
 
-CREATE TABLE Funcionario(
+CREATE TABLE Funcionario (
 
-codFunc integer identity primary key Not null,nome varchar(50) Not null,
+codFunc integer identity primary key Not null,
+
+nome varchar(50) Not null,
 
 sexo varchar(50) Not null,
 
@@ -180,7 +182,7 @@ FOREIGN KEY(codTransacao) REFERENCES Transacao(codTransacao)
 
 ------------------------------------- Popular Base de Dados -------------------------------------
 
-INSERT INTO Conta_Bancaria values ('Ita˙', '6986', '189965')
+INSERT INTO Conta_Bancaria values ('Ita√∫', '6986', '189965')
 
 INSERT INTO Cliente values ('Erik Rocha', '48067166958', 'eriksantos@gmail.com', '11954865952', 'senha123', 1 )
 
